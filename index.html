@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>KazPerfoEngeniring</title>
     <style>
 
-        nav.link {
+        ul.navbar-nav>li.nav-item>a.nav-link {
             color: #fff;
         }
 
@@ -24,6 +21,9 @@
             transform: translateY(-100%);
         }
     </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>KazPerfoEngeniring</title>
 </head>
 <body>
     <!-- <div style="height: 959px; background-position: center; background-image: url(img/background.png);"></div> -->
@@ -63,10 +63,10 @@
                             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Новости</a>
                         </li>
                         </ul>
-                        <form class="d-flex">
+                        <!-- <form class="d-flex">
                         <input style="background-color: #808490; color: #fff;"  class="form-control-sm me-2" type="search" placeholder="Поиск..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Поиск</button>
-                        </form>
+                        </form> -->
                     </div>
                     </div>
                 </nav>
@@ -187,8 +187,7 @@
 
         window.addEventListener('scroll', function() {
             var scrolled = window.scrollY;
-            
-            console.log(scrolled, scrollPrev)
+
             if ( scrolled > 100 ) {
                 header.classList.add('out');
             } else {
